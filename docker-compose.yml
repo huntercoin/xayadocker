@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  xaya:
+    image: xaya1:0.0.1
+    volumes:
+      - /home/snailbrain/xayadatadirdocker:/datadir
+    ports:
+      - 8399:8399
+    expose:
+      - "8399"
+    command: xayad -datadir=/datadir -rpcuser=user -rpcpassword=password -rpcport=8399 -rpcallowip=0.0.0.0/0
