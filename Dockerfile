@@ -7,3 +7,5 @@ RUN unzip /Xaya_Linux_static_1.1.zip
 RUN chmod +x /Xaya_Linux_static_11/*
 RUN mv /Xaya_Linux_static_11/* /usr/local/bin
 USER 99:100
+ENV USER_ID 99
+ENV GROUP_ID 100
