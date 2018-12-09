@@ -9,3 +9,5 @@ RUN mv /Xaya_Linux_static_11/* /usr/local/bin
 USER 99:100
 ENV USER_ID 99
 ENV GROUP_ID 100
+RUN usermod -u 99 nobody
+RUN usermod -g 100 nobody
