@@ -7,4 +7,4 @@ RUN apt-get install unzip -y
 RUN unzip /Xaya_Linux_static_1.1.zip
 RUN chmod +x /Xaya_Linux_static_11/*
 RUN mv /Xaya_Linux_static_11/* /usr/local/bin
-CMD xayad -rpcuser=user -rpcpassword=password -rpcport=8399 -datadir=/datadir
+
